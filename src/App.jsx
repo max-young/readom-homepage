@@ -3,37 +3,29 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
+import { Button } from "@headlessui/react";
 
 function App() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className="container flex flex-col items-center justify-center min-h-screen py-2">
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>{t("welcome")}</h1>
       </div>
-      <h1>{t("welcome")}</h1>
+      <div>
+        <img src={viteLogo} alt="Vite logo" />
+      </div>
       <div className="card">
-        <button
+        <Button
           onClick={() => {
             i18n.changeLanguage(i18n.language === "en" ? "zh" : "en");
           }}
         >
           {i18n.language === "en" ? "中文" : "English"}
-        </button>
-        <p className="text-cs">
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        </Button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   );
 }
 
