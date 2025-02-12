@@ -32,7 +32,7 @@ function App() {
           <p>{t("about 2")}</p>
           <p>{t("about 3")}</p>
           <p>{t("about 4")}</p>
-          <p>{t("about 5")}: alvysurvey@gmail.com</p>
+          <p>{t("about 5")}</p>
         </div>
         <div className="text-left space-y-2 mt-4">
           <p className="font-bold">{t("download")}:</p>
