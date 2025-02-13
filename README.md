@@ -1,5 +1,7 @@
 # Readom homepage
 
+React, Vite, TailwindCSS, DaisyUI
+
 ### dev
 
 ```bash
