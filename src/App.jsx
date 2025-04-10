@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 // import { Button } from "@headlessui/react";
 import { FcAndroidOs } from "react-icons/fc";
+import { FaGooglePlay } from "react-icons/fa";
 import readomIcon from "/readom.jpg";
 import readom1 from "/readom1.jpg";
 import readom2 from "/readom2.jpg";
@@ -36,9 +37,14 @@ function App() {
         </div>
         <div className="text-left space-y-2 mt-4">
           <p className="font-bold">{t("download")}:</p>
+          <div className="flex space-x-4">
           <a href="https://github.com/max-young/readom-homepage/releases/download/v1.0.0/readom-latest.apk">
             <FcAndroidOs size={32} />
           </a>
+          <a href="https://play.google.com/store/apps/details?id=com.maxyoung.rrrrrandomly">
+            <FaGooglePlay size={28} />
+          </a>
+          </div>
         </div>
       </div>
       <div className="flex space-x-2 p-4">
